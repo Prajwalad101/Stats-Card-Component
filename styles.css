@@ -1,4 +1,35 @@
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  background:
+    /* top, transparent red */ rgba(255, 0, 0, 0.25),
+    /* bottom, image */ url(images/image-header-desktop.jpg);
+  background-color: hsl(244, 38%, 16%);
+  width: 80%;
+  margin: 10px auto 10px auto;
+}
+
+.heading {
+}
+
+.accent-text {
+  color: hsl(277, 64%, 61%);
+}
+
+.description {
+  font-family: "Inter", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.stats {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.stat-heading {
+  color: white;
+  font-size: 20px;
 }
