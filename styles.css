@@ -1,20 +1,34 @@
 body {
   background-color: hsl(233, 47%, 7%);
   color: hsl(0, 0%, 100%);
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
 }
 
 .container {
-  background:
-    /* top, transparent red */ rgba(255, 0, 0, 0.25),
-    /* bottom, image */ url(images/image-header-desktop.jpg);
+  border-radius: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: hsl(244, 38%, 16%);
-  width: 80%;
-  margin: 10px auto 10px auto;
+  width: 69%;
+  margin: 100px auto 10px auto;
+}
+
+.text-container {
+  padding: 60px 100px 0px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.75fr 1fr 0.8fr;
+  grid-template-areas:
+    "heading heading heading"
+    "description description description"
+    "stat1 stat2 stat3";
 }
 
 .heading {
+  font-size: 30px;
+  grid-area: heading;
+  margin: 0;
 }
 
 .accent-text {
@@ -22,14 +36,35 @@ body {
 }
 
 .description {
-  font-family: "Inter", sans-serif;
+  margin: 0;
+  grid-area: description;
+
   color: hsla(0, 0%, 100%, 0.75);
 }
 
+.stats.stat1 {
+  grid-area: stat1;
+}
+.stats.stat2 {
+  grid-area: stat2;
+}
+.stats.stat3 {
+  grid-area: stat3;
+}
+.main-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 7px 7px 0px;
+}
+
 .stats {
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0;
   color: hsla(0, 0%, 100%, 0.6);
 }
 .stat-heading {
+  font-weight: 700;
   color: white;
   font-size: 20px;
 }
