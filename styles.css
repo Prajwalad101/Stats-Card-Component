@@ -6,12 +6,13 @@ body {
 }
 
 .container {
+  height: 50vh;
+  width: 70vw;
   border-radius: 7px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: hsl(244, 38%, 16%);
-  width: 69%;
-  margin: 100px auto 10px auto;
+  margin: 20vh auto 10px auto;
 }
 
 .text-container {
@@ -23,6 +24,14 @@ body {
     "heading heading heading"
     "description description description"
     "stat1 stat2 stat3";
+}
+
+.image {
+  border-radius: 0 7px 7px 0;
+  background: url(images/image-header-desktop.jpg);
+  background-size: cover;
+  background-color: hsla(233, 59%, 44%, 0.849);
+  background-blend-mode: overlay;
 }
 
 .heading {
